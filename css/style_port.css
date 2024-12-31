@@ -1,0 +1,195 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Custon ScrollBar CSS */
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #F0F8FF;
+}
+::-webkit-scrollbar-thumb{
+    background: #0E2431;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #594043;
+    border-radius: 12px;
+}
+
+/* Navegation menu CSS */
+
+nav{
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    transition: all 0.4s ease;
+    z-index: 999;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+nav.sticky {
+    padding: 13px 0;
+    background: #0E2431;
+}
+
+nav .navbar{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+
+}
+
+nav .navbar .logo a{
+    font-size: 40px;
+    font-weight: 500;
+    color: #0E2431;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav.sticky .navbar .logo a{
+    color: #fff;
+}
+
+nav .navbar .menu{
+    display: flex;
+}
+
+nav .navbar .menu li{
+    margin: 0 8px;
+    list-style: none;
+}
+
+.navbar .menu li a{
+    font-size: 18px;
+    font-weight: 400;
+    color: #0E2431;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color: #594043;
+}
+
+nav.sticky .navbar .menu li a:hover{
+    color: #594043;
+}
+
+nav.sticky .navbar .menu li a{
+    color: #fff;
+}
+
+.navbar .media-icons a{
+    font-size: 18px;
+    margin: 0 6px;
+    color: #0E2431;
+}
+
+nav.sticky .media-icons a{
+    color: #fff;
+}
+
+/* Side Navegation Menu Button CSS */
+
+nav .menu-btn,
+.navbar .cancel-btn{
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    right: 30px;
+    top:20px ;
+    display: none;
+    cursor: pointer;
+}
+
+nav .menu-btn{
+    color: #0E2431;
+    background: #0E2431;
+}
+
+nav.sticky  .menu-btn{
+    color: #fff;
+    background: #fff;
+}
+
+/* Comum Section CSS */
+
+
+section{
+    padding-top: 40px;
+}
+
+section .content {
+    width: 80%;
+    margin: 40px auto;
+    /* background: green; */
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    color: #0E2431;
+}
+
+section .title span{
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+}
+
+
+/* Section Sites CSS */
+
+section .content{
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
+
+section .boxes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    border: 2px solid red;
+}
+
+section .box-midia{
+    background: #594043;
+    text-align: center;
+    width: calc(100% / 2 - 20px);
+}
+
+section img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+

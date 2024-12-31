@@ -1,0 +1,696 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Custon ScrollBar CSS */
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #F0F8FF;
+}
+::-webkit-scrollbar-thumb{
+    background: #0E2431;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #594043;
+    border-radius: 12px;
+}
+
+/* Navegation menu CSS */
+
+nav{
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    transition: all 0.4s ease;
+    z-index: 999;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+nav.sticky {
+    padding: 13px 0;
+    background: #0E2431;
+}
+
+nav .navbar{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+
+}
+
+nav .navbar .logo a{
+    font-size: 40px;
+    font-weight: 500;
+    color: #0E2431;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav.sticky .navbar .logo a{
+    color: #fff;
+}
+
+nav .navbar .menu{
+    display: flex;
+}
+
+nav .navbar .menu li{
+    margin: 0 8px;
+    list-style: none;
+}
+
+.navbar .menu li a{
+    font-size: 18px;
+    font-weight: 400;
+    color: #0E2431;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color: #594043;
+}
+
+nav.sticky .navbar .menu li a:hover{
+    color: #594043;
+}
+
+nav.sticky .navbar .menu li a{
+    color: #fff;
+}
+
+.navbar .media-icons a{
+    font-size: 18px;
+    margin: 0 6px;
+    color: #0E2431;
+}
+
+nav.sticky .media-icons a{
+    color: #fff;
+}
+
+
+/* Side Navegation Menu Button CSS */
+
+nav .menu-btn,
+.navbar .cancel-btn{
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    right: 30px;
+    top:20px ;
+    display: none;
+    cursor: pointer;
+}
+
+nav .menu-btn{
+    color: #0E2431;
+    background: #0E2431;
+}
+
+nav.sticky  .menu-btn{
+    color: #fff;
+    background: #fff;
+}
+
+
+/* Home Section CSS */
+
+.home{
+    height: 100vh;
+    width: 100%;
+    /* background: #0E2431; */
+    background: url("../imgs/background.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.home .home-content{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home .text{
+    font-family: 'Ubuntu', sans-serif;
+    color: #0E2431;
+}
+.home .text .text-one{
+    font-size: 23px;
+    /* color: #0E2431; */
+}
+
+.home .text .text-two{
+    font-size: 60px;
+    font-weight: 600;
+    margin-left: -5px;
+    /* color: #0E2431; */
+}
+
+.home .text .text-three{
+    font-size: 40px;
+    /* color: #0E2431; */
+
+}
+
+.home  .text-four{
+    font-size: 23px;
+    margin: 5px 0;
+    /* color: #0E2431; */
+}
+
+.home .text {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.home .button {
+    margin: 14px 0;
+}
+
+.home .button button{
+    outline: none;
+    background: #0E2431;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+.home .button button:hover{
+    color: #0E2431;
+    background: #fff;
+    border-color: #0E2431;
+}
+
+/* About me Section CSS */
+
+
+section{
+    padding-top: 40px;
+}
+
+section .content {
+    width: 80%;
+    margin: 40px auto;
+    /* background: green; */
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    color: #0E2431;
+}
+
+section .title span{
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+}
+
+/* section .title span::before,
+section .title span::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: yellow;
+}
+
+section .title span::after{
+    width: 70%;
+    left: 50%;
+    bottom: -7px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+} */
+
+/* .about{
+    border: 5px solid red  ;
+} */
+
+.about .about-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .about-details .right{
+    width: 45%;
+    /* border: 2px solid maroon; */
+}
+
+.about .about-details .right img{
+    height: 400px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.about .about-details .left{
+    width: 55%;
+    /* border: 2px solid yellow; */
+}
+
+section .topic{
+    font-size: 25px;
+    font-weight: 500;
+    color: #0E2431;
+    margin-bottom: 10px;
+}
+
+.about .about-details .left p{
+    color: #0E2431;
+    text-align: justify;
+}
+
+
+
+
+
+section .button {
+    margin: 14px 0;
+}
+
+section .button button{
+    outline: none;
+    background: #0E2431;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+section .button button:hover{
+    color: #0E2431;
+    background: #fff;
+    border-color: #0E2431;
+}
+
+
+/* My Skills CSS */
+
+.skills{
+    background: #F0F8FF;
+}
+
+.skills .content{
+    padding: 40px 0px;
+}
+
+.skills .skills-details{
+    width: 100%;
+    /* border: 3px solid #594043; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills .skills-details .left{
+    width: 50%;
+}
+
+.skills .skills-details p{
+    color: #0E2431;
+    text-align: justify;
+}
+
+.skills-details .left .experience{
+    display: flex;
+    align-items: center;
+    /* border: 3px solid green; */
+}
+
+.skills-details .left .experience .num{
+    font-size: 80px;
+    color: #0E2431;
+    font-family: 500;
+}
+
+.skills-details .left .experience .exp{
+    margin-left: 10px;
+    font-size: 18px;
+    color: #0E2431;
+    font-family: 500;
+}
+
+.skills .skills-details .boxes{
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills .skills-details .boxes .box{
+    width: calc(100% / 2 - 20px);
+}
+
+.skills .skills-details .boxes .topic{
+    color: #0E2431;
+    text-align: center;
+}
+
+.skills .skills-details .boxes .num{
+    font-size: 80px;
+    color: #0E2431;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+/* My Services Section CSS */
+.service .boxes{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service .boxes .box{
+    width: calc(100%/3 - 20px);
+    margin: 20px 0;
+    padding: 20px 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+.service .boxes .box:hover .topic{
+    color: #fff
+}
+
+.service .boxes .box:hover{
+    background: #0E2431;
+    color: #fff;
+}
+
+.service .boxes .box .icon{
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    background: #0E2431;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 auto  10px auto;
+    border-radius: 20%;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+/* .service .boxes .box:hover .icon{
+    background: #0E2431;
+} */
+
+/* Contact Me CSS */
+.contact{
+    background: #F0F8FF;
+}
+.contact .text{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+/* Footer CSS */
+footer {
+    background: #0E2431;
+    text-align: center;
+    padding: 15px 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+footer .text span{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+footer .text span a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Scroll Button Up */
+.scroll-btn i{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 12px;
+    background: #0E2431;
+    color: #fff;
+    font-size: 18px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+
+
+
+
+
+
+
+/* Responsive Media Query CSS */
+
+@media (max-width: 1190px){
+    .about .content{
+        width: 85%;
+    }
+    .skills .content{
+        width: 90%;
+    }
+    .service .content{
+        width: 90%;
+    }
+}
+
+@media (max-width: 1090px){
+    .about .about-details {
+        flex-direction: column;
+    }
+    .about .about-details .right{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about .about-details .left{
+        width: 90%;
+        margin: 40px 0;
+    }
+    .skills .skills-details {
+        flex-direction: column;
+    }
+    .skills .skills-details .left{
+        width: 90%;
+    }
+    .skills .skills-details .boxes{
+        width: 90%;
+        margin: 40px 0;
+    }
+    .skills .skills-details .boxes .topic{
+        margin: 10px 0;
+    }
+    .service .boxes .box{
+        width: calc(100% / 2 - 20px);
+    }
+
+    .contact .text{
+        width: 90%;
+    }
+}
+
+@media (max-width: 917px){
+
+    .about .about-details .right img{
+        height: 350px;
+        width: 300px;
+    }
+
+
+    .skills-details .left .experience .num{
+        font-size: 50px;
+        color: #0E2431;
+        font-family: 500;
+    }
+
+    .skills-details .left .experience .exp{
+        font-size: 16px;
+    }
+
+    .skills .skills-details .boxes .topic{
+        font-size: 16px;
+    }
+
+    .skills .skills-details .boxes .num{
+        font-size: 50px;
+    }
+}
+
+
+@media (max-width: 800px){
+    nav .menu-btn{
+        color: #0E2431;
+        display: block;
+    }
+
+    .navbar .cancel-btn{
+        display: block;
+    }
+
+    nav .navbar .menu{
+        position: absolute;
+        left: -100%;
+        top: 0;
+        height: 100vh;
+        max-width: 400px;
+        width: 100%;
+        background: #0E2431;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 60px;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+}
+
+    nav .navbar.active .menu{
+        left: 0;
+    }
+
+    nav .navbar .menu li a{
+        display: block;
+        margin: 10px 0;
+        font-size: 23px;
+        color: #fff;
+    }
+
+    .navbar .media-icons a{
+        display: none;
+    }
+    .home .text .text-two{
+        font-size: 40px;
+        margin-left: -5px;
+    }
+
+    .home .text .text-three{
+        font-size: 30px;
+    }
+
+    .skills-details .left .experience .num{
+    font-size: 30px;
+    }
+
+    .skills-details .left .experience .exp{
+        font-size: 16px;
+    }
+
+    .skills .skills-details .boxes .topic{
+        font-size: 16px;
+    }
+
+    .skills .skills-details .boxes .num{
+        font-size: 30px;
+    }
+    .service .boxes .box{
+        width: 100%;
+    }
+    .contact .text{
+        width: 100%;
+    }
+}
+
+/* Responsive Media Query more small CSS */
+
+
+@media (max-width: 410px){
+    .home .text .text-two{
+        font-size: 30px;
+        margin-left: -5px;
+    }
+
+    .home .text .text-three{
+        font-size: 23px;
+    }
+}
+

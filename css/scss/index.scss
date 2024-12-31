@@ -1,0 +1,8 @@
+
+@import './variaveis';
+
+@import "./header";
+
+.contato{
+    @include fexCenter(column, $colorSecundary);
+}
