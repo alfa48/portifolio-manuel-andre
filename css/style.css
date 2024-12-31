@@ -126,12 +126,12 @@ nav .menu-btn,
 
 nav .menu-btn{
     color: #0E2431;
-    background: #0E2431;
+    /* background: #0E2431; */
 }
 
 nav.sticky  .menu-btn{
     color: #fff;
-    background: #fff;
+    /* background: #fff; */
 }
 
 
