@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Manuel Andr'e - Projectos</title>
+</head>
+
+<body>
+    <!-- Scroll Button -->
+    <div class="scroll-btn">
+        <a href="#projects-page">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </div>
+
+    <!-- Navigation menu start -->
+    <nav class="sticky"> <!-- Always sticky on subpages for better UX -->
+        <div class="navbar">
+            <div class="logo"><a href="index.html" data-i18n="nav-logo">Manuel Andre'</a></div>
+            <ul class="menu">
+                <li><a href="index.html#home" data-i18n="nav-home">Home</a></li>
+                <li><a href="index.html#about" data-i18n="nav-about">Sobre</a></li>
+                <li><a href="index.html#skills" data-i18n="nav-skills">Skills</a></li>
+                <li><a href="index.html#service" data-i18n="nav-service">Serviços</a></li>
+                <li><a href="index.html#contact" data-i18n="nav-contact">Contactos</a></li>
+                <li class="lang-switcher">
+                    <span id="lang-pt">PT</span> | <span id="lang-en">EN</span>
+                </li>
+                <div class="cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+            </ul>
+            <div class="media-icons">
+                <a target="_blank" href="https://web.facebook.com/mtunguno"><i class="fab fa-facebook-f"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/manuel-andr%C3%A9-1b940a282/"><i
+                        class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="projects-page" id="projects-page">
+        <div class="content">
+            <div class="title"><span data-i18n="projects-page-title">Meus Projectos</span></div>
+            <div class="projects-grid">
+                <!-- Project 1: Kukina Tech -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <div class="topic" data-i18n="projects-kukina-title">Kukina Tech</div>
+                        <p data-i18n="projects-kukina-p">Plataforma para gestão e divulgação de eventos tecnológicos em
+                            Angola. Focada em conectar
+                            desenvolvedores e entusiastas.</p>
+                        <div class="button">
+                            <a target="_blank" href="https://alfa48.github.io/kukina_tech/">
+                                <button data-i18n="projects-visit-btn">Visitar Site</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Placeholder -->
+                <div class="project-card coming-soon">
+                    <div class="project-info">
+                        <div class="topic" data-i18n="projects-coming-soon-title">Projecto em Breve</div>
+                        <p data-i18n="projects-coming-soon-p1">A trabalhar em algo incrível. Fique atento às
+                            actualizações.</p>
+                        <div class="button">
+                            <button disabled data-i18n="projects-dev-btn">Em desenvolvimento</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Placeholder -->
+                <div class="project-card coming-soon">
+                    <div class="project-info">
+                        <div class="topic" data-i18n="projects-coming-soon-title">Projecto em Breve</div>
+                        <p data-i18n="projects-coming-soon-p2">A transformar mais ideias em código.</p>
+                        <div class="button">
+                            <button disabled data-i18n="projects-dev-btn">Em desenvolvimento</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="back-home">
+                <a href="index.html" data-i18n="projects-back-btn">
+                    <i class="fas fa-arrow-left"></i> Voltar para o Início
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="text">
+            <span data-i18n="footer-text">By Manuel Andre' | tel: +244 922292854 | &#169; 2024 Todos os direitos
+                reservados</span>
+        </div>
+    </footer>
+
+    <script type="module" src="js/scripts.js"></script>
+</body>
+
+</html>

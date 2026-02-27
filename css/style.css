@@ -1,5 +1,6 @@
 /* google font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,13 +9,15 @@
 }
 
 /* Custon ScrollBar CSS */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 10px;
 }
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
     background: #F0F8FF;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background: #0E2431;
     border-radius: 12px;
     -webkit-border-radius: 12px;
@@ -23,14 +26,14 @@
     -o-border-radius: 12px;
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
     background: #594043;
     border-radius: 12px;
 }
 
 /* Navegation menu CSS */
 
-nav{
+nav {
     position: fixed;
     width: 100%;
     padding: 20px 0;
@@ -47,7 +50,7 @@ nav.sticky {
     background: #0E2431;
 }
 
-nav .navbar{
+nav .navbar {
     display: flex;
     width: 90%;
     margin: auto;
@@ -57,27 +60,27 @@ nav .navbar{
 
 }
 
-nav .navbar .logo a{
+nav .navbar .logo a {
     font-size: 40px;
     font-weight: 500;
     color: #0E2431;
     font-family: 'Ubuntu', sans-serif;
 }
 
-nav.sticky .navbar .logo a{
+nav.sticky .navbar .logo a {
     color: #fff;
 }
 
-nav .navbar .menu{
+nav .navbar .menu {
     display: flex;
 }
 
-nav .navbar .menu li{
+nav .navbar .menu li {
     margin: 0 8px;
     list-style: none;
 }
 
-.navbar .menu li a{
+.navbar .menu li a {
     font-size: 18px;
     font-weight: 400;
     color: #0E2431;
@@ -88,25 +91,55 @@ nav .navbar .menu li{
     -ms-transition: all 0.3s ease;
 }
 
-.navbar .menu li a:hover{
+.navbar .menu li a:hover {
     color: #594043;
 }
 
-nav.sticky .navbar .menu li a:hover{
+nav.sticky .navbar .menu li a:hover {
     color: #594043;
 }
 
-nav.sticky .navbar .menu li a{
+nav.sticky .navbar .menu li a {
     color: #fff;
 }
 
-.navbar .media-icons a{
+.navbar .lang-switcher {
+    margin-left: 15px;
+    font-size: 14px;
+    color: #0E2431;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+nav.sticky .navbar .lang-switcher {
+    color: #fff;
+}
+
+.navbar .lang-switcher span {
+    padding: 0 5px;
+    transition: all 0.3s ease;
+    opacity: 0.6;
+}
+
+.navbar .lang-switcher span.active {
+    opacity: 1;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.navbar .lang-switcher span:hover {
+    color: #594043;
+}
+
+.navbar .media-icons a {
     font-size: 18px;
     margin: 0 6px;
     color: #0E2431;
 }
 
-nav.sticky .media-icons a{
+nav.sticky .media-icons a {
     color: #fff;
 }
 
@@ -114,22 +147,22 @@ nav.sticky .media-icons a{
 /* Side Navegation Menu Button CSS */
 
 nav .menu-btn,
-.navbar .cancel-btn{
+.navbar .cancel-btn {
     position: absolute;
     color: #fff;
     font-size: 20px;
     right: 30px;
-    top:20px ;
+    top: 20px;
     display: none;
     cursor: pointer;
 }
 
-nav .menu-btn{
+nav .menu-btn {
     color: #0E2431;
     /* background: #0E2431; */
 }
 
-nav.sticky  .menu-btn{
+nav.sticky .menu-btn {
     color: #fff;
     /* background: #fff; */
 }
@@ -137,7 +170,7 @@ nav.sticky  .menu-btn{
 
 /* Home Section CSS */
 
-.home{
+.home {
     height: 100vh;
     width: 100%;
     /* background: #0E2431; */
@@ -147,7 +180,7 @@ nav.sticky  .menu-btn{
     background-attachment: fixed;
 }
 
-.home .home-content{
+.home .home-content {
     width: 90%;
     height: 100%;
     margin: auto;
@@ -156,29 +189,31 @@ nav.sticky  .menu-btn{
     justify-content: center;
 }
 
-.home .text{
+.home .text {
     font-family: 'Ubuntu', sans-serif;
     color: #0E2431;
+    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.8), 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-.home .text .text-one{
+
+.home .text .text-one {
     font-size: 23px;
     /* color: #0E2431; */
 }
 
-.home .text .text-two{
+.home .text .text-two {
     font-size: 60px;
     font-weight: 600;
     margin-left: -5px;
     /* color: #0E2431; */
 }
 
-.home .text .text-three{
+.home .text .text-three {
     font-size: 40px;
     /* color: #0E2431; */
 
 }
 
-.home  .text-four{
+.home .text-four {
     font-size: 23px;
     margin: 5px 0;
     /* color: #0E2431; */
@@ -194,7 +229,7 @@ nav.sticky  .menu-btn{
     margin: 14px 0;
 }
 
-.home .button button{
+.home .button button {
     outline: none;
     background: #0E2431;
     color: #fff;
@@ -214,7 +249,7 @@ nav.sticky  .menu-btn{
     -o-transition: all 0.4s ease;
 }
 
-.home .button button:hover{
+.home .button button:hover {
     color: #0E2431;
     background: #fff;
     border-color: #0E2431;
@@ -223,24 +258,25 @@ nav.sticky  .menu-btn{
 /* About me Section CSS */
 
 
-section{
+section {
     padding-top: 40px;
 }
 
 section .content {
     width: 80%;
-    margin: 40px auto;
+    margin: 20px auto;
     /* background: green; */
     font-family: 'Ubuntu', sans-serif;
 }
-section .title{
+
+section .title {
     display: flex;
     justify-content: center;
-    margin: 40px;
+    margin: 20px;
     color: #0E2431;
 }
 
-section .title span{
+section .title span {
     font-size: 30px;
     font-weight: 600;
     position: relative;
@@ -278,35 +314,40 @@ section .title span::after{
     align-items: center;
 }
 
-.about .about-details .right{
+.about .about-details .right {
     width: 45%;
     /* border: 2px solid maroon; */
 }
 
-.about .about-details .right img{
-    height: 400px;
-    width: 350px;
+.about .about-details .right img {
+    width: 100%;
+    max-width: 500px;
+    /* Increased from 350px */
+    height: auto;
+    /* Allow natural aspect ratio */
+    min-height: 400px;
     object-fit: cover;
     border-radius: 12px;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
-.about .about-details .left{
+.about .about-details .left {
     width: 55%;
     /* border: 2px solid yellow; */
 }
 
-section .topic{
+section .topic {
     font-size: 25px;
     font-weight: 500;
     color: #0E2431;
     margin-bottom: 10px;
 }
 
-.about .about-details .left p{
+.about .about-details .left p {
     color: #0E2431;
     text-align: justify;
 }
@@ -319,7 +360,7 @@ section .button {
     margin: 14px 0;
 }
 
-section .button button{
+section .button button {
     outline: none;
     background: #0E2431;
     color: #fff;
@@ -339,7 +380,7 @@ section .button button{
     -o-transition: all 0.4s ease;
 }
 
-section .button button:hover{
+section .button button:hover {
     color: #0E2431;
     background: #fff;
     border-color: #0E2431;
@@ -348,15 +389,15 @@ section .button button:hover{
 
 /* My Skills CSS */
 
-.skills{
+.skills {
     background: #F0F8FF;
 }
 
-.skills .content{
+.skills .content {
     padding: 40px 0px;
 }
 
-.skills .skills-details{
+.skills .skills-details {
     width: 100%;
     /* border: 3px solid #594043; */
     display: flex;
@@ -364,66 +405,72 @@ section .button button:hover{
     align-items: center;
 }
 
-.skills .skills-details .left{
+.skills .skills-details .left {
     width: 50%;
 }
 
-.skills .skills-details p{
+.skills .skills-details p {
     color: #0E2431;
     text-align: justify;
 }
 
-.skills-details .left .experience{
+.skills-details .left .experience {
     display: flex;
     align-items: center;
     /* border: 3px solid green; */
 }
 
-.skills-details .left .experience .num{
+.skills-details .left .experience .num {
     font-size: 80px;
     color: #0E2431;
     font-family: 500;
 }
 
-.skills-details .left .experience .exp{
+.skills-details .left .experience .exp {
     margin-left: 10px;
     font-size: 18px;
     color: #0E2431;
     font-family: 500;
 }
 
-.skills .skills-details .boxes{
+.skills .skills-details .boxes {
     width: 45%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.skills .skills-details .boxes .box{
+.skills .skills-details .boxes .box {
     width: calc(100% / 2 - 20px);
 }
 
-.skills .skills-details .boxes .topic{
+.skills .skills-details .boxes .topic {
     color: #0E2431;
     text-align: center;
 }
 
-.skills .skills-details .boxes .num{
+.skills .skills-details .boxes .num {
     font-size: 80px;
     color: #0E2431;
     font-weight: 500;
     text-align: center;
 }
 
+.skills .skills-details .boxes .num::after {
+    content: '%';
+    font-size: 35px;
+    margin-left: 2px;
+}
+
 
 /* My Services Section CSS */
-.service .boxes{
+.service .boxes {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.service .boxes .box{
+.service .boxes .box {
     width: calc(100%/3 - 20px);
     margin: 20px 0;
     padding: 20px 10px;
@@ -441,23 +488,23 @@ section .button button:hover{
     -o-transition: all 0.4s ease;
 }
 
-.service .boxes .box:hover .topic{
+.service .boxes .box:hover .topic {
     color: #fff
 }
 
-.service .boxes .box:hover{
+.service .boxes .box:hover {
     background: #0E2431;
     color: #fff;
 }
 
-.service .boxes .box .icon{
+.service .boxes .box .icon {
     height: 50px;
     width: 50px;
     color: #fff;
     background: #0E2431;
     text-align: center;
     line-height: 50px;
-    margin: 0 auto  10px auto;
+    margin: 0 auto 10px auto;
     border-radius: 20%;
     -webkit-border-radius: 20%;
     -moz-border-radius: 20%;
@@ -475,10 +522,11 @@ section .button button:hover{
 } */
 
 /* Contact Me CSS */
-.contact{
+.contact {
     background: #F0F8FF;
 }
-.contact .text{
+
+.contact .text {
     text-align: center;
     margin: auto;
     width: 80%;
@@ -491,20 +539,21 @@ footer {
     padding: 15px 0;
     font-family: 'Ubuntu', sans-serif;
 }
-footer .text span{
+
+footer .text span {
     color: #fff;
     font-size: 17px;
     font-weight: 500;
 }
 
-footer .text span a{
+footer .text span a {
     color: #fff;
     font-size: 18px;
     font-weight: 500;
 }
 
 /* Scroll Button Up */
-.scroll-btn i{
+.scroll-btn i {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -514,10 +563,15 @@ footer .text span a{
     font-size: 18px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
     border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
+    transition: all 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.scroll-btn.show i {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 
@@ -529,94 +583,106 @@ footer .text span a{
 
 /* Responsive Media Query CSS */
 
-@media (max-width: 1190px){
-    .about .content{
+@media (max-width: 1190px) {
+    .about .content {
         width: 85%;
     }
-    .skills .content{
+
+    .skills .content {
         width: 90%;
     }
-    .service .content{
+
+    .service .content {
         width: 90%;
     }
 }
 
-@media (max-width: 1090px){
+@media (max-width: 1090px) {
     .about .about-details {
         flex-direction: column;
     }
-    .about .about-details .right{
+
+    .about .about-details .right {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .about .about-details .left{
+    .about .about-details .left {
         width: 90%;
         margin: 40px 0;
     }
+
     .skills .skills-details {
         flex-direction: column;
     }
-    .skills .skills-details .left{
+
+    .skills .skills-details .left {
         width: 90%;
     }
-    .skills .skills-details .boxes{
+
+    .skills .skills-details .boxes {
         width: 90%;
         margin: 40px 0;
     }
-    .skills .skills-details .boxes .topic{
+
+    .skills .skills-details .boxes .topic {
         margin: 10px 0;
     }
-    .service .boxes .box{
+
+    .service .boxes .box {
         width: calc(100% / 2 - 20px);
     }
 
-    .contact .text{
+    .contact .text {
         width: 90%;
     }
 }
 
-@media (max-width: 917px){
+@media (max-width: 917px) {
 
-    .about .about-details .right img{
+    .about .about-details .right img {
         height: 350px;
         width: 300px;
     }
 
 
-    .skills-details .left .experience .num{
+    .skills-details .left .experience .num {
         font-size: 50px;
         color: #0E2431;
         font-family: 500;
     }
 
-    .skills-details .left .experience .exp{
+    .skills-details .left .experience .exp {
         font-size: 16px;
     }
 
-    .skills .skills-details .boxes .topic{
+    .skills .skills-details .boxes .topic {
         font-size: 16px;
     }
 
-    .skills .skills-details .boxes .num{
+    .skills .skills-details .boxes .num {
         font-size: 50px;
+    }
+
+    .skills .skills-details .boxes .num::after {
+        font-size: 22px;
     }
 }
 
 
-@media (max-width: 800px){
-    nav .menu-btn{
+@media (max-width: 800px) {
+    nav .menu-btn {
         color: #0E2431;
         display: block;
     }
 
-    .navbar .cancel-btn{
+    .navbar .cancel-btn {
         display: block;
     }
 
-    nav .navbar .menu{
+    nav .navbar .menu {
         position: absolute;
         left: -100%;
         top: 0;
@@ -632,50 +698,57 @@ footer .text span a{
         -moz-transition: all 0.5s ease;
         -ms-transition: all 0.5s ease;
         -o-transition: all 0.5s ease;
-}
+    }
 
-    nav .navbar.active .menu{
+    nav .navbar.active .menu {
         left: 0;
     }
 
-    nav .navbar .menu li a{
+    nav .navbar .menu li a {
         display: block;
         margin: 10px 0;
         font-size: 23px;
         color: #fff;
     }
 
-    .navbar .media-icons a{
+    .navbar .media-icons a {
         display: none;
     }
-    .home .text .text-two{
+
+    .home .text .text-two {
         font-size: 40px;
         margin-left: -5px;
     }
 
-    .home .text .text-three{
+    .home .text .text-three {
         font-size: 30px;
     }
 
-    .skills-details .left .experience .num{
-    font-size: 30px;
-    }
-
-    .skills-details .left .experience .exp{
-        font-size: 16px;
-    }
-
-    .skills .skills-details .boxes .topic{
-        font-size: 16px;
-    }
-
-    .skills .skills-details .boxes .num{
+    .skills-details .left .experience .num {
         font-size: 30px;
     }
-    .service .boxes .box{
+
+    .skills-details .left .experience .exp {
+        font-size: 16px;
+    }
+
+    .skills .skills-details .boxes .topic {
+        font-size: 16px;
+    }
+
+    .skills .skills-details .boxes .num {
+        font-size: 30px;
+    }
+
+    .skills .skills-details .boxes .num::after {
+        font-size: 14px;
+    }
+
+    .service .boxes .box {
         width: 100%;
     }
-    .contact .text{
+
+    .contact .text {
         width: 100%;
     }
 }
@@ -683,14 +756,114 @@ footer .text span a{
 /* Responsive Media Query more small CSS */
 
 
-@media (max-width: 410px){
-    .home .text .text-two{
+@media (max-width: 410px) {
+    .home .text .text-two {
         font-size: 30px;
         margin-left: -5px;
     }
 
-    .home .text .text-three{
+    .home .text .text-three {
         font-size: 23px;
     }
 }
 
+/* Projects Page CSS */
+.projects-page {
+    min-height: 100vh;
+    padding-top: 100px;
+    background: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.projects-page .projects-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.projects-page .project-card {
+    width: calc(100% / 3 - 20px);
+    background: #fff;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projects-page .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 10, 0, 0.15);
+    border-color: #0E2431;
+}
+
+.projects-page .project-card.coming-soon {
+    opacity: 0.7;
+    background: #fdfdfd;
+}
+
+.projects-page .project-info .topic {
+    font-size: 22px;
+    font-weight: 600;
+    color: #0E2431;
+    margin-bottom: 10px;
+}
+
+.projects-page .project-info p {
+    color: #444;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.projects-page .project-card .button button {
+    font-size: 18px;
+    padding: 6px 14px;
+    width: 100%;
+}
+
+.projects-page .project-card .button button[disabled] {
+    background: #ccc;
+    cursor: not-allowed;
+    border-color: #ccc;
+}
+
+.projects-page .back-home {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.projects-page .back-home a {
+    color: #0E2431;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.projects-page .back-home a:hover {
+    color: #594043;
+}
+
+.projects-page .back-home i {
+    margin-right: 8px;
+}
+
+/* Responsive for Projects Page */
+@media (max-width: 1090px) {
+    .projects-page .project-card {
+        width: calc(100% / 2 - 20px);
+    }
+}
+
+@media (max-width: 700px) {
+    .projects-page .project-card {
+        width: 100%;
+    }
+}
