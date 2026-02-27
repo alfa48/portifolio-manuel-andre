@@ -1,5 +1,3 @@
-import translations from './translations.js';
-
 // DOM Elements
 const menuBtn = document.querySelector(".menu-btn");
 const cancelBtn = document.querySelector(".cancel-btn");

@@ -1,5 +1,6 @@
-const translations = {
+window.translations = {
     pt: {
+        "nav-logo": "Manuel Andre'",
         "nav-home": "Home",
         "nav-about": "Sobre",
         "nav-skills": "Skills",
@@ -45,6 +46,7 @@ const translations = {
         "projects-back-btn": "Voltar para o Início"
     },
     en: {
+        "nav-logo": "Manuel Andre'",
         "nav-home": "Home",
         "nav-about": "About",
         "nav-skills": "Skills",
@@ -90,5 +92,3 @@ const translations = {
         "projects-back-btn": "Back to Home"
     }
 };
-
-export default translations;
