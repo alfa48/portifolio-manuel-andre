@@ -111,26 +111,35 @@ nav.sticky .navbar .menu li a {
     cursor: pointer;
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 nav.sticky .navbar .lang-switcher {
     color: #fff;
+    text-decoration: none;
+
 }
 
 .navbar .lang-switcher span {
     padding: 0 5px;
     transition: all 0.3s ease;
     opacity: 0.6;
+    text-decoration: none;
+
 }
 
 .navbar .lang-switcher span.active {
     opacity: 1;
     font-weight: 700;
     text-decoration: underline;
+    text-decoration: none;
+
 }
 
 .navbar .lang-switcher span:hover {
     color: #594043;
+    text-decoration: none;
+
 }
 
 .navbar .media-icons a {
@@ -552,6 +561,11 @@ footer .text span a {
     font-weight: 500;
 }
 
+footer .text {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Scroll Button Up */
 .scroll-btn i {
     position: fixed;
@@ -709,6 +723,22 @@ footer .text span a {
         margin: 10px 0;
         font-size: 23px;
         color: #fff;
+    }
+
+    .navbar .lang-switcher {
+        color: #fff;
+        margin: 15px 0;
+        font-size: 20px;
+        justify-content: center;
+        text-decoration: none;
+
+    }
+
+    .navbar .lang-switcher span:hover {
+        color: #fff;
+        opacity: 0.8;
+        text-decoration: none;
+
     }
 
     .navbar .media-icons a {

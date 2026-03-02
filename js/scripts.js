@@ -72,6 +72,9 @@ const setLanguage = (lang) => {
     }
 
     // Update all elements with data-i18n attribute
+    const translations = window.translations;
+    if (!translations || !translations[lang]) return;
+
     document.querySelectorAll("[data-i18n]").forEach(el => {
         const key = el.getAttribute("data-i18n");
         if (translations[lang][key]) {
